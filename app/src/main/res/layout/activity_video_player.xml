@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+<!--    <LinearLayout
+        android:id="@+id/bannerAdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/rateapp"
+                    android:layout_width="110dp"
+                    android:layout_height="61dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="قيم التطبيق"
+                    android:textColor="#ffffffff"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/moreapp"
+                    android:layout_width="130dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="المزيد من التطبيقات"
+                    android:textColor="#ffffffff"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bnt"
+                    android:layout_width="110dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/done"
+                    android:textColor="#ffffffff"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout2"
+        android:layout_alignParentStart="true">-->
+
+        <com.google.android.exoplayer2.ui.StyledPlayerView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            app:shutter_background_color="@color/black"
+            android:background="@color/black"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:auto_show="true"
+            app:hide_on_touch="true"
+            app:controller_layout_id="@layout/layout_exoplayer_control_views"/>
+
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/composeView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintTop_toBottomOf="@id/videoView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigatin_view"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:menu="@menu/bottom_nav"
+            app:backgroundTint="@color/black"
+            app:labelVisibilityMode="unlabeled"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

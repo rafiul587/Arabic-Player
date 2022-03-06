@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/asset_5.xml" value="0.2055" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5(1).xml" value="0.1135" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5.xml" value="0.115" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5_1.xml" value="0.1135" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_full_screen_video.xml" value="0.23854166666666668" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_splash.xml" value="0.24010416666666667" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_video_player.xml" value="0.13438735177865613" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/fdjlkfjd.xml" value="0.23385416666666667" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/layout_exoplayer_control_views.xml" value="0.264" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/page3.xml" value="0.12" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/page4.xml" value="0.23385416666666667" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/splash.xml" value="0.1" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/menu/bottom_nav.xml" value="0.23489583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="13" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/back"
+        android:title="Back"
+        android:icon="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+    <item
+        android:id="@+id/mute"
+        android:title="Mute"
+        android:icon="@drawable/ic_baseline_volume_up_24"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/ic_baseline_share_24"/>
+
+</menu>
