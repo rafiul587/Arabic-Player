@@ -4,9 +4,7 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.content.res.ColorStateList
 import android.content.res.Configuration
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -16,7 +14,6 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.getValue
@@ -38,12 +35,9 @@ import androidx.core.view.WindowInsetsControllerCompat
 import com.example.arabic_unity.databinding.ActivityVideoPlayerBinding
 import com.example.arabic_unity.ui.component.CommonButton
 import com.google.android.exoplayer2.ExoPlayer
-import com.google.android.exoplayer2.MediaItem
-import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.ui.StyledPlayerView
-import com.unity3d.ads.UnityAds
+import com.google.android.material.composethemeadapter.MdcTheme
 import com.unity3d.services.banners.IUnityBannerListener
-import java.util.*
 
 
 class VideoPlayerActivity : AppCompatActivity() {
@@ -106,7 +100,7 @@ class VideoPlayerActivity : AppCompatActivity() {
         binding.bottomNavigatinView.itemIconTintList = iconColorStates
         binding.bottomNavigatinView.itemTextColor = iconColorStates
         binding.composeView.setContent {
-            MaterialTheme() {
+            MdcTheme() {
                 Surface() {
                     val scrollState = rememberScrollState()
                     var isLyricShowing by remember {
@@ -142,94 +136,6 @@ class VideoPlayerActivity : AppCompatActivity() {
                     }
                 }
             }
-        }
-        /*listRaw()
-        binding.bnt.setOnClickListener {
-            //showInterstitialAd()
-            startActivity(Intent(this@page3, page4::class.java))
-        }
-        binding.rateapp.setOnClickListener {
-            val appName = packageName
-            try {
-                startActivity(
-                    Intent(
-                        "android.intent.action.VIEW",
-                        Uri.parse("market://details?id=$appName")
-                    )
-                )
-            } catch (e: ActivityNotFoundException) {
-                startActivity(
-                    Intent(
-                        "android.intent.action.VIEW",
-                        Uri.parse("http://play.google.com/store/apps/details?id=$appName")
-                    )
-                )
-            }
-        }
-        binding.moreapp.setOnClickListener(View.OnClickListener {
-            startActivity(
-                Intent(
-                    "android.intent.action.VIEW",
-                    Uri.parse(getString(R.string.play_more_apps))
-                )
-            )
-        })
-        iUnityBannerListener = object : IUnityBannerListener {
-            override fun onUnityBannerLoaded(s: String, view: View) {
-                (findViewById<View>(R.id.bannerAdLayout) as ViewGroup).removeView(view)
-                (findViewById<View>(R.id.bannerAdLayout) as ViewGroup).addView(view)
-            }
-
-            override fun onUnityBannerUnloaded(s: String) {}
-            override fun onUnityBannerShow(s: String) {}
-            override fun onUnityBannerClick(s: String) {}
-            override fun onUnityBannerHide(s: String) {}
-            override fun onUnityBannerError(s: String) {}
-        }
-        UnityBanners.setBannerListener(iUnityBannerListener)*/
-    }
-
-    private fun initializePlayer() {
-        player = ExoPlayer.Builder(this)
-            .setSeekForwardIncrementMs(10000L)
-            .setSeekBackIncrementMs(10000L)
-            .build()
-            .also { exoPlayer ->
-                binding.videoView.player = exoPlayer
-                val mediaItem = MediaItem.fromUri(
-                    Uri.parse(
-                        "android.resource://" +
-                                packageName + "/" + R.raw.toyor
-                    )
-                )
-
-                exoPlayer.setMediaItem(mediaItem)
-                exoPlayer.prepare()
-                exoPlayer.addListener(object : Player.Listener {
-                    override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {
-                        if (playbackState == ExoPlayer.STATE_READY) {
-                        }
-                        if (playbackState == ExoPlayer.STATE_ENDED) {
-                            //performEndExoPlayer()
-                        }
-                    }
-                })
-            }
-    }
-
-    private fun stringForTime(timeMs: Long): String? {
-        val mFormatBuilder = StringBuilder()
-        val mFormatter = Formatter(mFormatBuilder, Locale.getDefault())
-        val totalSeconds = timeMs / 1000
-        //  videoDurationInSeconds = totalSeconds % 60;
-        val seconds = totalSeconds % 60
-        val minutes = totalSeconds / 60 % 60
-        val hours = totalSeconds / 3600
-        mFormatBuilder.setLength(0)
-        return if (hours > 0) {
-            mFormatter.format("%d:%02d:%02d", hours, minutes, seconds).toString()
-        } else {
-            mFormatter.format("%02d:%02d", minutes, seconds).toString()
         }
     }
 
@@ -330,11 +236,5 @@ class VideoPlayerActivity : AppCompatActivity() {
         binding.videoView.layoutParams = params
         binding.bottomNavigatinView.visibility = View.VISIBLE
         fullscreen = false
-    }
-
-    private fun showInterstitialAd() {
-        if (UnityAds.isInitialized()) {
-            UnityAds.show(this@VideoPlayerActivity, resources.getString(R.string.interstitial))
-        }
     }
 }

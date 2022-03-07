@@ -3,7 +3,7 @@
     <style name="Theme.ComposeNestedList" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
-    <style name="Theme.ArabicUnity" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Theme.ArabicUnity" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <!-- Status bar color. -->
@@ -17,7 +17,7 @@
         <item name="android:windowBackground">@null</item>
     </style>
 
-    <style name="FullscreenActionBarStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="FullscreenActionBarStyle" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:background">@color/black</item>
     </style>
 </resources>

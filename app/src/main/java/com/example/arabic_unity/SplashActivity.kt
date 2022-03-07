@@ -39,29 +39,10 @@ class SplashActivity : ComponentActivity() {
                 }
             }
         }
-
-        /*setContentView(R.layout.activity_splash)
-            UnityAds.initialize(this.baseContext, resources.getString(R.string.game_id), testMode)
-            object : Thread() {
-                override fun run() {
-                    try {
-                        sleep(4000)
-                    } catch (e: InterruptedException) {
-                        e.printStackTrace()
-                    } finally {
-                        startActivity(Intent(this@SplashActivity, MainActivity::class.java))
-                    }
-                }
-            }.start()*/
     }
 
     private fun navigateToMain() {
         startActivity(Intent(this, MainActivity::class.java))
-        finish()
-    }
-
-    public override fun onPause() {
-        super.onPause()
         finish()
     }
 }
