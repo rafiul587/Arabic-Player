@@ -1,77 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.compose.ui.platform.ComposeView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:layout_height="match_parent">
 
-<!--    <LinearLayout
+    <FrameLayout
         android:id="@+id/bannerAdLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:gravity="bottom|center_horizontal"
-        android:orientation="vertical" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 
-    <LinearLayout
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="0.51"
-        android:orientation="vertical"
-        android:weightSum="1">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerAdLayout" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="229dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="@string/select"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30dp"
-            android:textStyle="normal|bold|italic" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="vertical"
-            android:weightSum="1">
-
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="202dp"
-                android:layout_height="64dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/buttoncolor2"
-                android:gravity="center"
-                android:shadowColor="#ff2d3000"
-                android:text="@string/video"
-                android:textColor="#ff1e1e01"
-                android:textSize="20dp"
-                android:textStyle="normal|bold|italic" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="246dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_weight="0.16"
-            android:text="@string/start"
-            android:textColor="#ff03fd78"
-            android:textSize="25dp"
-            android:textStyle="normal|bold|italic" />
-
-    </LinearLayout>-->
-
-</androidx.compose.ui.platform.ComposeView>
+</androidx.constraintlayout.widget.ConstraintLayout>

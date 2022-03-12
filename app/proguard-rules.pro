@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.example.arabic_unity.models.** { *; }
+# Gson specific classes
+-keep class com.google.gson.stream.** { *; }

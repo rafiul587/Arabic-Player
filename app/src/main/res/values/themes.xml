@@ -8,7 +8,18 @@
         <item name="colorPrimary">@color/purple_500</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="android:windowBackground">@drawable/blank_drawable</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.ArabicUnity">
+        <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/blank_drawable</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowDisablePreview">true</item>
     </style>
 
     <style name="FullscreenTheme" parent="Theme.ArabicUnity">

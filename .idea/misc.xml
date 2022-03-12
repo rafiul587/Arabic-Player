@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/asset_5.xml" value="0.2055" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/blank_drawable.xml" value="0.114" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5(1).xml" value="0.1135" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5.xml" value="0.115" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5_1.xml" value="0.1135" />
@@ -17,6 +18,7 @@
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/page4.xml" value="0.23385416666666667" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/splash.xml" value="0.1" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/menu/bottom_nav.xml" value="0.23489583333333333" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/xml/network_security_config.xml" value="0.24010416666666667" />
       </map>
     </option>
   </component>
