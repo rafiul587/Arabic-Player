@@ -81,7 +81,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:tint="@color/white"
-                android:src="@drawable/ic_baseline_fullscreen_24"
+                android:src="@drawable/ic_fullscreen"
                 android:focusable="true" />
 
 
