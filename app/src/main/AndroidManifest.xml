@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.arabic_unity">
+    package="com.example.arabic_mp3player">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArabicUnity">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -28,13 +28,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".VideoPlayerActivity"
+            android:name=".activities.VideoPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity
-            android:name=".PrivacyPolicyActivity"
+            android:name="com.example.arabic_mp3player.activities.PrivacyPolicyActivity"
             android:screenOrientation="portrait" />
         <meta-data android:name="applovin.sdk.key"
             android:value="@string/sdk_key"/>

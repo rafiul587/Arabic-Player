@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/New folder2/Arabic-Mp3-Player/app/src/main/res/drawable/blank_drawable.xml" value="0.187" />
+        <entry key="..\:/New folder2/Arabic-Mp3-Player/app/src/main/res/drawable/ic_baseline_mute_24.xml" value="0.1" />
+        <entry key="..\:/New folder2/Arabic-Mp3-Player/app/src/main/res/drawable/ic_default_mp3_icon.xml" value="0.1" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/asset_5.xml" value="0.2055" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/blank_drawable.xml" value="0.114" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5(1).xml" value="0.1135" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5.xml" value="0.115" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_asset_5_1.xml" value="0.1135" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_full_screen_video.xml" value="0.23854166666666668" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/activity_splash.xml" value="0.24010416666666667" />
@@ -18,10 +22,11 @@
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/page4.xml" value="0.23385416666666667" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/layout/splash.xml" value="0.1" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/menu/bottom_nav.xml" value="0.23489583333333333" />
+        <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/New folder2/Arabic-Unity/app/src/main/res/xml/network_security_config.xml" value="0.24010416666666667" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="13" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK" />
 </project>
